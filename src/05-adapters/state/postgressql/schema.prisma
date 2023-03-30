@@ -2,11 +2,40 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "linux-musl"]
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model Card {
+  id          Int           @id @default(autoincrement())
+  externalId  Int
+  cardName    String
+  cardNumber  String
+  cardText    String
+  imageUrl    String
+  cardSet     String
+  isFavorite  Boolean
+  cardConfig  CardConfig[]
+  regulations Regulations[]
+}
+
+model CardConfig {
+  id         Int    @id @default(autoincrement())
+  configName String
+  value      String
+  card       Card   @relation(fields: [cardId], references: [id])
+  cardId     Int
+}
+
+model Regulations {
+  id         Int    @id @default(autoincrement())
+  externalId Int
+  title      String
+  card       Card   @relation(fields: [cardId], references: [id])
+  cardId     Int
 }

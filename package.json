@@ -4,7 +4,7 @@
   "description": "",
   "author": "",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "APACHE",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -19,7 +19,10 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "db:migration": "npx prisma migrate dev --name init",
-    "db:generate": "npx prisma generate"
+    "db:generate": "npx prisma generate",
+    "db:seed": "npx prisma db seed",
+    "docker:compose-build": "docker-compose up -d --build -V",
+    "docker:compose": "docker-compose up -d"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
@@ -71,6 +74,7 @@
     "testEnvironment": "node"
   },
   "prisma": {
-    "schema": "src/database/schema.prisma"
+    "schema": "src/05-adapters/state/postgressql/schema.prisma",
+    "seed": "ts-node src/05-adapters/state/postgressql/seed.ts"
   }
 }

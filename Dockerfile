@@ -4,9 +4,6 @@
 
 FROM node:18-alpine As development
 
-# Required for Prisma Client to work in container
-RUN apt-get update && apt-get install -y openssl
-
 # Create app directory
 WORKDIR /usr/src/app
 
