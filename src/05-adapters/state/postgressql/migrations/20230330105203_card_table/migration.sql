@@ -32,9 +32,6 @@ CREATE TABLE "Regulations" (
     CONSTRAINT "Regulations_pkey" PRIMARY KEY ("id")
 );
 
--- CreateIndex
-CREATE UNIQUE INDEX "Article_title_key" ON "Article"("title");
-
 -- AddForeignKey
 ALTER TABLE "CardConfig" ADD CONSTRAINT "CardConfig_cardId_fkey" FOREIGN KEY ("cardId") REFERENCES "Card"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 

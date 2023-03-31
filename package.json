@@ -18,11 +18,11 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "db:migration": "npx prisma migrate dev --name init",
+    "db:migration-generate": "npx prisma migrate dev",
     "db:generate": "npx prisma generate",
     "db:seed": "npx prisma db seed",
-    "docker:compose-build": "docker-compose up -d --build -V",
-    "docker:compose": "docker-compose up -d"
+    "docker:compose-up": "docker-compose up -d --build -V",
+    "docker:compose-build": "docker-compose up -d"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
