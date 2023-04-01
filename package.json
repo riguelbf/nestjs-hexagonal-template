@@ -18,20 +18,23 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "db:migration-generate": "npx prisma migrate dev",
+    "db:local": "docker run -p 5432:5432 -e POSTGRES_PASSWORD=1234 postgres",
+    "db:migration-run": "npx prisma migrate dev",
     "db:generate": "npx prisma generate",
     "db:seed": "npx prisma db seed",
-    "docker:compose-up": "docker-compose up -d --build -V",
-    "docker:compose-build": "docker-compose up -d"
+    "docker:compose-up": "docker-compose up -d --build -V"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^6.3.0",
     "@prisma/client": "^4.12.0",
+    "nest-winston": "^1.9.1",
     "prisma": "^4.12.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
