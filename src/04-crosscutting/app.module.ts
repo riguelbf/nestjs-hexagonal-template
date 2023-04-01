@@ -1,8 +1,14 @@
-import { Module } from '@nestjs/common';
+import { RequestLoggerMiddleware } from './middlewares/logging/request-logger.middleware';
+import HealthModule from './modules/monitoring/health.module';
+import { MiddlewareConsumer, Module } from '@nestjs/common';
 
 @Module({
-  imports: [],
+  imports: [HealthModule],
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(RequestLoggerMiddleware).forRoutes('*');
+  }
+}
