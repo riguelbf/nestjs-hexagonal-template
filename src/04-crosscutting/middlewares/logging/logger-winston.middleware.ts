@@ -5,10 +5,10 @@ const loggerWinston = WinstonModule.createLogger({
   format: winston.format.combine(
     winston.format.colorize({ all: true }),
     winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-    // winston.format.json(),
+    winston.format.json(),
     winston.format.splat(),
     winston.format.prettyPrint(),
-    winston.format.label({ label: 'Smartedu' }),
+    winston.format.label({ label: 'z-place' }),
   ),
   transports: [
     new winston.transports.File({
@@ -16,6 +16,7 @@ const loggerWinston = WinstonModule.createLogger({
       level: 'error',
     }),
     new winston.transports.Console({
+      level: 'debug',
       format: winston.format.combine(
         winston.format.cli(),
         winston.format.splat(),

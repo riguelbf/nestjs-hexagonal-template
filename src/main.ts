@@ -11,7 +11,7 @@ async function bootstrap() {
   });
 
   const config = new DocumentBuilder()
-    .setTitle('Median')
+    .setTitle('Z-Place')
     .setDescription('The z-place API description')
     .setVersion('0.1')
     .build();
