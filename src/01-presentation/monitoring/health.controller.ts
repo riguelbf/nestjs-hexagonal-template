@@ -5,7 +5,7 @@ import { ApiTags, ApiResponse, ApiOperation } from '@nestjs/swagger';
 @ApiTags('monitoring')
 export class HealthController {
   @ApiOperation({ description: 'Check health of api' })
-  @ApiResponse({ status: 200, description: 'Connect Device' })
+  @ApiResponse({ status: 200, description: 'Check health of api' })
   @Get('/check')
   async check(): Promise<object> {
     return { status: `Working in ${new Date()}` };

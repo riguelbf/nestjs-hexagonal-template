@@ -11,7 +11,7 @@ export class RequestLoggerMiddleware implements NestMiddleware {
       statusCode >= 400 && statusCode <= 499;
 
     this.logger.debug(
-      `${req.originalUrl} \n - ${JSON.stringify(
+      `[${req.method}] ${req.originalUrl} \n - ${JSON.stringify(
         req.headers,
         null,
         2,
