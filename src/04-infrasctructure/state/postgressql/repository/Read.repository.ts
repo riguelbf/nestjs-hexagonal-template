@@ -1,8 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 import { BaseEntity } from './Base.entity';
-import { IReadRepository } from './IRead.repository';
+import { IReadState } from '../../../../03-core/ports/state/IRead.state';
 
-class ReadRepository<T extends BaseEntity> implements IReadRepository<T> {
+class ReadRepository<T extends BaseEntity> implements IReadState<T> {
   protected readonly ORM: PrismaClient;
   private readonly table: keyof T;
 

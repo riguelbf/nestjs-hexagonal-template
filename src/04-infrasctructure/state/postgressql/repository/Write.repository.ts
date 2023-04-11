@@ -1,8 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 import { BaseEntity } from './Base.entity';
-import { IWriteRepository } from './IWrite.repository';
+import { IWriteState } from '03-core/ports/state/IWrite.state';
 
-class WriteRepository<T extends BaseEntity> implements IWriteRepository<T> {
+class WriteRepository<T extends BaseEntity> implements IWriteState<T> {
   protected readonly ORM: PrismaClient;
   private readonly table: keyof T;
 
