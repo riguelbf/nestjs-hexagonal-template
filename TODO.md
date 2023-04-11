@@ -5,5 +5,6 @@
 [X] Helath check route
 [X] Logs
 [ ] GraphQL Configurations
-[ ] Add nestjs devtools
-[ ] 
+[ ] Add monitoring
+[X] Gracefull shoutdown 
+[ ] JWT

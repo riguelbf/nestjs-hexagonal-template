@@ -1,13 +1,13 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './04-crosscutting/app.module';
+import { AppModule } from '05-crosscutting/app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { loggerWinston } from './04-crosscutting/middlewares/logging/logger-winston.middleware';
+import { LoggerWinston } from '05-crosscutting/middlewares/logging/LoggerWinston.middleware';
 
 const port = process.env.PORT || '3000';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    logger: loggerWinston,
+    logger: LoggerWinston,
     snapshot: true,
   });
 

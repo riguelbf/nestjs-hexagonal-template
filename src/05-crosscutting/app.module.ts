@@ -1,4 +1,4 @@
-import { RequestLoggerMiddleware } from './middlewares/logging/request-logger.middleware';
+import { RequestLoggerMiddleware } from './middlewares/logging/RequestLogger.middleware';
 import HealthModule from './modules/monitoring/health.module';
 import { MiddlewareConsumer, Module } from '@nestjs/common';
 
