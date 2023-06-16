@@ -8,3 +8,4 @@
 - [ ] Add monitoring
 - [X] Gracefull shoutdown 
 - [ ] JWT
+- [ ] Opentelemetry
