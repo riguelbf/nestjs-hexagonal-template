@@ -2,10 +2,18 @@
 
 - [X] Error Handling
 - [X] Swagger
-- [X] Helath check route
+- [X] Health check route simple
+- [X] Health check with nestjs library
 - [X] Logs
 - [ ] GraphQL Configurations
 - [ ] Add monitoring
-- [X] Gracefull shoutdown 
+- [X] Graceful shutdown 
 - [ ] JWT
 - [ ] Opentelemetry
+- [ ] Sample Unit Test
+- [ ] Sample e2e test
+- [X] Linter
+- [X] Prettier
+- [X] Docker
+- [ ] Readme
+- [ ] CLi to start boilerplate
