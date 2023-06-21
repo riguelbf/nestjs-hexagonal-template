@@ -17,3 +17,8 @@
 - [X] Docker
 - [ ] Readme
 - [ ] CLi to start boilerplate
+
+
+# Links uteis
+
+https://www.tomray.dev/nestjs-docker-production
