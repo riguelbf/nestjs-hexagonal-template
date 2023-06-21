@@ -19,7 +19,7 @@
 
 ## In study
 - [ ] GraphQL Configurations
-- [ ] Add monitoring
+- [ ] Self hosted monitoring - https://github.com/honnamkuan/nestjs-status-monitor
 - [ ] Opentelemetry
 - [ ] CLi to start boilerplate
 
