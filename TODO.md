@@ -13,12 +13,15 @@
 
 ## TO DO
 - [ ] JWT
+  - [ ] (https://stackoverflow.com/questions/66884739/nestjs-authguard-that-handles-both-graphql-and-rest)
+  - [ ] https://blog.logrocket.com/how-to-implement-jwt-authentication-nestjs/
 - [ ] Sample Unit Test
 - [ ] Sample e2e test
 - [ ] Readme
 
 ## In study
 - [ ] GraphQL Configurations
+  - [ ] https://jenyus.web.app/blog/2021-03-07-nestjs-starter
 - [ ] Self hosted monitoring - https://github.com/honnamkuan/nestjs-status-monitor
 - [ ] Opentelemetry
 - [ ] CLi to start boilerplate
