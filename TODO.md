@@ -17,6 +17,8 @@
   - [ ] https://blog.logrocket.com/how-to-implement-jwt-authentication-nestjs/
 - [ ] Sample Unit Test
 - [ ] Sample e2e test
+- [ ] CQRS
+  - [ ] https://medium.com/swlh/cqrs-explained-with-nest-js-1bcf83c5c839
 - [ ] Readme
 
 ## In study
