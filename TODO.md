@@ -15,6 +15,7 @@
 - [ ] JWT
   - [ ] (https://stackoverflow.com/questions/66884739/nestjs-authguard-that-handles-both-graphql-and-rest)
   - [ ] https://blog.logrocket.com/how-to-implement-jwt-authentication-nestjs/
+  - [ ] Refres token -> https://www.elvisduru.com/blog/nestjs-jwt-authentication-refresh-token
 - [ ] Sample Unit Test
 - [ ] Sample e2e test
 - [ ] CQRS
