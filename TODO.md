@@ -21,6 +21,7 @@
 - [ ] CQRS
   - [ ] https://medium.com/swlh/cqrs-explained-with-nest-js-1bcf83c5c839
 - [ ] Readme
+- [ ] Repository pattern with UWO and change Prisma to TypeOrm
 
 ## In study
 - [ ] GraphQL Configurations
