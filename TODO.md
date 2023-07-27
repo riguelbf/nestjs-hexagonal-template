@@ -16,12 +16,21 @@
   - [ ] (https://stackoverflow.com/questions/66884739/nestjs-authguard-that-handles-both-graphql-and-rest)
   - [ ] https://blog.logrocket.com/how-to-implement-jwt-authentication-nestjs/
   - [ ] Refres token -> https://www.elvisduru.com/blog/nestjs-jwt-authentication-refresh-token
-- [ ] Sample Unit Test
-- [ ] Sample e2e test
+- [ ] Tests 
+  - [ ] Sample Unit Test
+  - [ ] Sample e2e test
 - [ ] CQRS
   - [ ] https://medium.com/swlh/cqrs-explained-with-nest-js-1bcf83c5c839
+- [ ] Infrastructure
+  - [ ] Repository pattern
+  - [ ] UWO
+  - [ ] Change Prisma to TypeOrm
+- [ ] Security
+  - [ ] SQL Injection
+  - [ ] Cross-site scripting (XSS)
+  - [ ] Cross-site request forgery (CSRF)
+  - [ ] Denial-of-service (DoS) attacks
 - [ ] Readme
-- [ ] Repository pattern with UWO and change Prisma to TypeOrm
 
 ## In study
 - [ ] GraphQL Configurations
