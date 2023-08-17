@@ -38,6 +38,8 @@
 - [ ] Self hosted monitoring - https://github.com/honnamkuan/nestjs-status-monitor
 - [ ] Opentelemetry
 - [ ] CLi to start boilerplate
+- [ ] Resilience
+  - [ ] Retry/Backoff/Circuit Breaker -> https://github.com/connor4312/cockatiel  
 
 # Links uteis
 
